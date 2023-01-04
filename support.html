@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <!-- header title -->
+        <title>
+            SmartSouls - Register
+        </title>
+        <!-- to link to the css file -->
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body> 
+        <!-- for the background -->
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/icon.png"></a>
+                <!-- for the navigation bar at the top -->
+                <div class="navbar" id="navigationBar">
+                    <i class="fa fa-times" onclick="hiddenmenu()"></i>
+                    <!-- for each navigation elements -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+
+            </nav>
+            <h1>Support</h1>
+        </section>
+<!-- register section -->
+        <section class="customer">
+            <h1>Common Questions and Answers</h1>
+            <p>We'll be updating this Q&A page every month!</p>
+
+            <div class="row">
+                <div class="registration-col">
+                    
+                    <p>Question: How do I log into an account?</p>
+                </div>
+                <div class="customer-col">
+                    
+                    <p>Answer: Click on the REGISTER button at the navigation bar at the top section (or click on the menu icon)
+                        if you're on mobile and then on the REGISTER button. Then type in your credentials and login!
+                    </p>
+                </div>
+                <div class="registration-col">
+                    <div>
+                        <p>Question: How long is the lead time on the GPUs?</p>
+                    </div>
+                </div>
+                <div class="customer-col">
+                    <div>
+                        <p>Answer: Normally a month or two, depending on the company. Nvidia products are generally more available.</p>
+                    </div>
+                </div>
+                <div class="registration-col">
+                    
+                    <p>Question: What made you startup this business?</p>
+                </div>
+                <div class="customer-col">
+                    
+                    <p>Answer: A few of us were underpaid graduates at our old companies and were bored. We decided to bring the best there is to people around the world.</p>
+                </div>
+                <div class="registration-col">
+                    <div>
+                        <p>Question: How are your prices on your products very reasonable?</p>
+                    </div>
+                </div>
+                <div class="customer-col">
+                    <div>
+                        <p>Answer: It's because we've cut out the middle man on all of our products and bring the products directly from the companies. 
+                            Our non-product services are reasonable priced too. Contact us for engineering services through our social media!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+<!-- last class probs -->
+        <section class="footer">
+            <p>We started off as a small startup company with great minds on board.<br>
+                It took time but we're now the best at your one stop shop for bleeding edge tech.</p>
+
+            <div class="bottom_icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+            <h5>SmartSouls Ltd.</h5>
+
+        </section>
+
+
+
+
+<!-- The JS used for the toggle menu for mobile -->
+        <script>
+            var navigationBar = document.getElementById("navigationBar");
+            function hiddenmenu(){
+                navigationBar.style.top = "-100%";
+            }
+            function showmenu(){
+                navigationBar.style.top = "0";
+            }
+        </script>
+    </body>
+</html>

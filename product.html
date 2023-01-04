@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <!-- header title -->
+        <title>
+            SmartSouls - Products
+        </title>
+        <!-- to link to the css file -->
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body> 
+        <!-- for the background -->
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/icon.png"></a>
+                <!-- for the navigation bar at the top -->
+                <div class="navbar" id="navigationBar">
+                    <i class="fa fa-times" onclick="hiddenmenu()"></i>
+                    <!-- for each navigation elements -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+
+            </nav>
+            <h1>Products</h1>
+        </section>
+
+       <!-- the next section -->
+       <section class="campus">
+        <h1>Graphics Cards</h1>
+        <p>Here's the top selling products.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/rtx4090.png">
+                <div class="layer">
+                    <h3>NVIDIA RTX4090</h3>
+                    <h2><br><br><br><br><br>Price: RM5500</h2>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/AMDgpu.jpg">
+                <div class="layer">
+                    <h3>AMD 7900xt</h3>
+                    <h2><br><br><br><br><br>Price: RM4300</h2>
+
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/intelgpu.jpg">
+                <div class="layer">
+                    <h3>Intel ARC</h3>
+                    <h2><br><br><br><br><br>Price: RM3700</h2>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="campus">
+        <h1>Smartphones</h1>
+        <p>Here's the top selling products.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/samsungs23.jpg">
+                <div class="layer">
+                    <h3>SAMSUNG S23</h3>
+                    <h2><br><br><br><br><br>Price: RM4100</h2>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/nothingphone1.jpg">
+                <div class="layer">
+                    <h3>NOTHING Phone(1)</h3>
+                    <h2><br><br><br><br><br>Price: RM4300</h2>
+
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/iphone15.webp">
+                <div class="layer">
+                    <h3>iPhone 15 Pro</h3>
+                    <h2><br><br><br><br><br>Price: RM3700</h2>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="campus">
+        <h1>Smartphones</h1>
+        <p>Here's the top selling products.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/razerheadphones1.jpg">
+                <div class="layer">
+                    <h3>Razer Chroma</h3>
+                    <h2><br><br><br><br><br>Price: RM850</h2>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/sonyheadphones3.jfif">
+                <div class="layer">
+                    <h3>Sony WH-6000</h3>
+                    <h2><br><br><br><br><br>Price: RM999</h2>
+
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/Massdrop.jpg">
+                <div class="layer">
+                    <h3>Massdrop Series 9</h3>
+                    <h2><br><br><br><br><br>Price: RM1200</h2>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!-- last class probs -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>We started off as a small startup company with great minds on board.<br>
+                It took time but we're now the best at your one stop shop for bleeding edge tech.</p>
+            <div class="bottom_icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+            <h5>SmartSouls Ltd.</h5>
+
+        </section>
+
+
+
+
+<!-- The JS used for the toggle menu for mobile -->
+        <script>
+            var navigationBar = document.getElementById("navigationBar");
+            function hiddenmenu(){
+                //navigationBar.style.right = "-200px";
+                navigationBar.style.top = "-100%";
+            }
+            function showmenu(){
+                navigationBar.style.top = "0";
+            }
+        </script>
+        
+    </body>
+</html>

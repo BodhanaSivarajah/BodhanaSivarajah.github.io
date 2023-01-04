@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <!-- header title -->
+        <title>
+            SmartSouls - Register
+        </title>
+        <!-- to link to the css file -->
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body> 
+        <!-- for the background -->
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/icon.png"></a>
+                <!-- for the navigation bar at the top -->
+                <div class="navbar" id="navigationBar">
+                    <i class="fa fa-times" onclick="hiddenmenu()"></i>
+                    <!-- for each navigation elements -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+
+            </nav>
+            <h1>Login or Register</h1>
+        </section>
+<!-- register section -->
+        <section class="registration">
+
+                <form action="action_page.php">
+                    <div class="container">
+                      <h1>Login<br><br></h1>
+                      <hr>
+                  
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                  
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                  
+                      <label for="psw-repeat"><b>Repeat Password</b></label>
+                      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                      <hr>
+
+                      <button class = "registerbtn" onclick="window.open('index.html','_self');">
+                        Login
+                      </button>
+                      
+                    </div>
+                  
+        
+                  </form>
+
+
+                  <form action="action_page.php">
+                    <div class="container">
+                      <h1>Register<br><br></h1>
+                      <hr>
+                  
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                  
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                  
+                      <label for="psw-repeat"><b>Repeat Password</b></label>
+                      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                      <hr>
+                  
+                      <p>By creating an account you agree to our <a href="index.html">Terms & Privacy</a>.</p>
+                      <button class = "registerbtn" onclick="window.open('index.html','_self');">
+                        Register
+                      </button>
+
+                    </div>
+                  
+                    <div class="container signin">
+                      <p>Already have an account? <a href="register.html">Sign in</a>.</p>
+                    </div>
+                  </form>
+            </div>
+
+
+        </section>
+<!-- last class probs -->
+        <section class="footer">
+            <p>We started off as a small startup company with great minds on board.<br>
+                It took time but we're now the best at your one stop shop for bleeding edge tech.</p>
+
+            <div class="bottom_icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+            <h5>SmartSouls Ltd.</h5>
+
+        </section>
+
+
+
+
+<!-- The JS used for the toggle menu for mobile -->
+        <script>
+            var navigationBar = document.getElementById("navigationBar");
+            function hiddenmenu(){
+                navigationBar.style.top = "-100%";
+            }
+            function showmenu(){
+                navigationBar.style.top = "0";
+            }
+        </script>
+    </body>
+</html>

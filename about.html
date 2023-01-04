@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <!-- header title -->
+        <title>
+            SmartSouls - About
+        </title>
+        <!-- to link to the css file -->
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body> 
+        <!-- for the background -->
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/icon.png"></a>
+                <!-- for the navigation bar at the top -->
+                <div class="navbar" id="navigationBar">
+                    <i class="fa fa-times" onclick="hiddenmenu()"></i>
+                    <!-- for each navigation elements -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+
+            </nav>
+            <h1>About Us</h1>
+            
+            <video width="320" height="240" controls>
+                <source src="video/smartphone1.mp4" type="video/mp4">
+                <source src="video/Smartphone1.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+              
+ 		<video width="320" height="240" controls>
+                <source src="video/Laptop.mp4" type="video/mp4">
+                <source src="video/Laptop.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+
+		<video width="320" height="240" controls>
+                <source src="video/Headphone.mp4" type="video/mp4">
+                <source src="video/Headphone.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+
+            <!-- <div class="text-box">
+                <h1>SmartSouls</h1>
+                <p>
+                    We are one of the leading technology product brands <br>
+                    in Malaysia where we use the latest technologies of <br>
+                    Intel and AMD. You don´t understand a word? <br>
+                    No problem, let's take a look!
+                </p>
+                <a href="" class="hero-btn">Keep scrolling to learn more about us</a>
+            </div> -->
+        </section>
+
+
+<!-- last class probs -->
+        <section class="sub-footer">
+            <p>We started off as a small startup company with great minds on board.<br>
+                It took time but we're now the your best one stop shop for bleeding edge tech.</p>
+
+            <div class="bottom_icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+            <h5>SmartSouls Ltd.</h5>
+
+        </section>
+
+
+
+
+<!-- The JS used for the toggle menu for mobile -->
+        <script>
+            var navigationBar = document.getElementById("navigationBar");
+            function hiddenmenu(){
+                navigationBar.style.top = "-100%";
+            }
+            function showmenu(){
+                navigationBar.style.top = "0";
+            }
+        </script>
+    </body>
+</html>
