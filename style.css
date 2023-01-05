@@ -303,7 +303,6 @@ p{
     width: 100%;
     font-weight: 450;
     color: #fff;
-    /* font-size: 45px; */
     font-size: auto;
     bottom: 0;
     left: 50%;
@@ -629,34 +628,31 @@ hr {
 }
 
 .registerbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 1.0;
-  border-radius: 15px;
-  text-align: center;
-  background-position: center;
+    width: 100%;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    opacity: 1.0;
+    border-radius: 15px;
+    background-position: center;
+    border: none;
+    cursor: pointer;
 }
 
 .registerbtn:hover {
   opacity:1;
 }
 
-/* Add a blue text color to links */
 a {
   color: dodgerblue;
 }
 
-/* Set a grey background color and center the text of the "sign in" section */
 .signin {
   background-color: #f1f1f1;
   text-align: center;
 }
-
 
 
 
@@ -688,3 +684,6 @@ a {
         padding-top: 600px;
     }
 }
+
+
+
